@@ -80,6 +80,13 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.qcom.ril.sh
 
+# Audio effects
+PRODUCT_PACKAGES += \
+    libqcomvisualizer
+
+PRODUCT_COPY_FILES += \
+    device/samsung/qcom-common/audio_effects.conf:system/vendor/etc/audio_effects.conf
+
 # Charger
 PRODUCT_PACKAGES += charger charger_res_images
 
